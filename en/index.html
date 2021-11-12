@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Baitadi - visitsudur.github.io</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="https://visitsudur.github.io">VisitSudur</a>
+        <div class="right">
+          <select
+            name="selected-lang"
+            id="selectLang"
+            onchange="changeLanguage(this.value)"
+          >
+            <option value="en" selected>English</option>
+            <option value="ne">Nepali</option>
+          </select>
+        </div>
+        <hr />
+        <nav>
+          <ul id="navbar">
+            <li><a href="#">Home</a><span>-</span></li>
+            <li><a href="#">Nepal</a><span>-</span></li>
+            <li><a href="#">Sudurpaschim Pradesh</a><span>-</span></li>
+            <li><a href="#" class="last">Baitadi</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <script>
+      function changeLanguage(hl) {
+        var n = "/visitbaitadi/" + hl;
+        window.location.href = n + "/";
+      }
+    </script>
+  </body>
+</html>

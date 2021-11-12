@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Baitadi - visitsudur.github.io</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2 class="left">
+          <a href="https://visitsudur.github.io/visitbaitadi/en/">VisitSudur</a>
+        </h2>
+        <div class="right">
+          <select
+            name="selected-lang"
+            id="selectLang"
+            onchange="changeLanguage(this.value)"
+          >
+            <option value="en" selected>English</option>
+            <option value="ne">Nepali</option>
+          </select>
+        </div>
+        <nav id="nav-container">
+          <ul id="navbar">
+            <li><a href="#">Home</a><span>-</span></li>
+            <li><a href="#">Nepal</a><span>-</span></li>
+            <li><a href="#">Sudurpaschim Pradesh</a><span>-</span></li>
+            <li><a href="#" class="last">Baitadi</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="main-content">
+        <h2>Baitadi, Sudurpaschim Pradesh, Nepal</h2>
+        <div class="main-container">
+          <div class="item">
+            <a href="/banks-at-baitadi.html">Bank at Baitadi</a>
+          </div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+          <div class="item"><a href="#"></a></div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footer-content">
+          <p>
+            <a href="https://github.com/visitsudur/visitsudur.github.io"
+              >Edit On Github</a
+            >
+          </p>
+        </div>
+        <div>
+          <a href="https://visitsudur.github.io">visitsudur.github.io</a> |
+          <a href="/about">About</a> | <a href="">Star this Project</a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function changeLanguage(hl) {
+        var n = "/visitbaitadi/" + hl;
+        window.location.href = n + "/";
+      }
+    </script>
+  </body>
+</html>
