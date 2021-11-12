@@ -4,38 +4,141 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visit Baitadi - visitsudur.github.io</title>
-    <link rel="stylesheet" href="../styles/style.css" />
+    <title>layout</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <a href="https://visitsudur.github.io">VisitSudur</a>
-        <div class="right">
+    <div class="container">
+      <header class="header-container">
+        <div>
+          <h2 class="logo">
+            <a href="https://visitsudur.github.io/travelbaitadi">
+              VisitSudur
+            </a>
+          </h2>
+        </div>
+        <div>
+          <nav class="nav-container">
+            <ul id="navbar">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <aside class="aside-container">
+          <div class="about-us">
+              <img src="images/1280px-New_Emblem_of_Nepal.svg.png" alt="">
+          </div>
+      </aside>
+
+      <main class="main-container">
+        <h2>Baitadi, Sudurpaschim Pradesh, Nepal</h2>
+        <div class="grid-container">
+          <div class="item">
+            <a href="/banks-at-baitadi.html">Bank at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/post-offices-at-baitadi.html">Post Office at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/schools-at-baitadi.html">School at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/primary-schools-at-baitadi.html"
+              >Primary School at Baitadi</a
+            >
+          </div>
+          <div class="item">
+            <a href="/secondary-schools-at-baitadi.html"
+              >Secondary School at Baitadi</a
+            >
+          </div>
+          <div class="item">
+            <a href="/resturants-at-baitadi.html">Resturant at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/post-offices-at-baitadi.html">Post Offices at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/barber-shops-at-baitadi.html">Barber shop at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/beauty-salons-at-baitadi.html">Beauty salon at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/bicycle-stores-at-baitadi.html"
+              >Bicycle store at Baitadi</a
+            >
+          </div>
+          <div class="item">
+            <a href="/book-stores-at-baitadi.html">Book store at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/bowling-alley-at-baitadi.html"
+              >Bowling alley at Baitadi</a
+            >
+          </div>
+          <div class="item">
+            <a href="/bus-stations-at-baitadi.html">Bus station at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/cafe-at-baitadi.html">Cafe at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/campgrounds-at-baitadi.html">Campground at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/car-dealers-at-baitadi.html">Car dealer at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/car-rental-at-baitadi.html">Car rental at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/car-repair-at-baitadi.html">Car repair at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/car-wash.html">Car wash at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/casino-at-baitadi.html">Casino at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/cemetery-at-baitadi.html">Cemetery at Baitadi</a>
+          </div>
+          <div class="item">
+            <a href="/tourist-attraction-at-baitadi.html"
+              >Tourist Attraction at Baitadi</a
+            >
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer-container">
+        <div class="copyright">
+          <p>Copyright &copy; visitsudur.github.io</p>
+        </div>
+        <div class="language-selector">
+          <label for="selectedLang">Choose Language:</label>
           <select
-            name="selected-lang"
-            id="selectLang"
+            name="selectedLang"
+            id="selectLanguage"
             onchange="changeLanguage(this.value)"
           >
             <option value="en" selected>English</option>
             <option value="ne">Nepali</option>
           </select>
         </div>
-        <hr />
-        <nav>
-          <ul id="navbar">
-            <li><a href="#">Home</a><span>-</span></li>
-            <li><a href="#">Nepal</a><span>-</span></li>
-            <li><a href="#">Sudurpaschim Pradesh</a><span>-</span></li>
-            <li><a href="#" class="last">Baitadi</a></li>
-          </ul>
-        </nav>
-      </header>
+      </footer>
     </div>
+    
     <script>
       function changeLanguage(hl) {
         var n = "/visitbaitadi/" + hl;
-        window.location.href = n + "/";
+        window.location.href = n + '/';
       }
     </script>
   </body>
